@@ -1,0 +1,41 @@
+{
+  "interruptservices": true,
+  "portalurl": "https://<ARCGIS.PORTAL.HOSTING.SERVER>/arcgis/",
+  "portaladmin": "DUMMYUSERNAME",
+  "portaladminpw": "DUMMYPASSWORD",
+  "serverurl": "<ARCGIS.SERVER.HOSTING.SERVER>/arcgis/admin",
+  "services": [
+    {
+      "folder": null,
+      "servicename": "<SERVICE01>",
+      "servicetype": "MapServer"
+    },
+    {
+      "folder": "<FOLDERNAME>",
+      "servicename": "<SERVICE02>",
+      "servicetype": "MapServer"
+    }
+  ],
+  "gdbadminpath": "<PATH/TO/GDB/ADMIN/CONNECTION/FILE.SDE>",
+  "dataownerpath": "<PATH/TO/DATA/OWNER/CONNECTION/FILE.SDE>",
+  "reconcilemode": "ALL_VERSIONS",
+  "targetversion": "dbo.DEFAULT",
+  "abortconflicts": "NO_ABORT",
+  "postversions": "NO_POST",
+  "deleteversions": "KEEP_VERSION",
+  "logdirectory": "<PATH/TO/LOG/DIRECTORY>",
+  "loglevel": "INFO",
+  "emaillog": true,
+  "senderemail": "<SENDER@EMAIL.ADDRESS>",
+  "senderpassword": "<SENDER.PASSWORD>",
+  "logrecipients": [
+    {
+      "email": "<PRIMARYADMIN@EMAIL.ADDRESS>",
+      "level": "all"
+    },
+    {
+      "email": "<SECONDARYADMIN@EMAIL.ADDRESS>",
+      "level": "erroronly"
+    }
+  ]
+}
